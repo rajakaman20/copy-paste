@@ -4,6 +4,7 @@ import Home from "./Componet/Home";
 import Navbar from "./Componet/Nevbar";
 import Paste from "./Componet/Paste";
 import ViewPaste from "./Componet/ViewPaste";
+
 const router = createBrowserRouter([
   {
     path: "/",
