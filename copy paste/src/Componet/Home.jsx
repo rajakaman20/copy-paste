@@ -21,10 +21,12 @@ function Home() {
      if(pasteId)
      {
       //update
+      console.log("PASTE being dispatched:", paste);
       dispatch(updateToPastes(paste));
      }
      else{
      // create
+     console.log("PASTE being dispatched:", paste);
      dispatch(addToPastes(paste));
      }
      // after createion or updation
@@ -51,7 +53,7 @@ function Home() {
       </div>
       <div className="mt-8">
         <textarea
-          className="rounded-2xl mt-4, min-w-[700px] p-4 Ar"
+          className="rounded-2xl mt-4 min-w-[700px] p-4 Ar"
           value={value}
           placeholder="Enter Content"
           onChange={(e) => setValue(e.target.value)}
