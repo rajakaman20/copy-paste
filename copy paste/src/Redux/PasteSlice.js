@@ -95,7 +95,7 @@ export const PasteSlice = createSlice({
   // Update local storage with the updated state
   localStorage.setItem("pastes", JSON.stringify(state.pastes));
 
-  toast.success("Paste Removed Successfully");
+  // toast.success("Paste Removed Successfully");
 
   console.log("State after removal:", state.pastes);
     },
